@@ -1,11 +1,10 @@
-class BaseUrls {
-  static const String baseAPi = "";
-
-  static const String localAPi = "";
+class BaseUrls { // TODO use .env to store URLs, let this file change based on values provided in .env
+  static const String baseAPi = ""; // TODO import API URL from .env
+  static const String localAPi = "";  // TODO import Local API URL from .env
 
   static const String baseURL = "";
 
-  static const String productionAPi = baseAPi; // TODO switch Apis here
+  static const String productionAPi = baseAPi; // TODO Switch API URL here
 
   //endpoints
   static const String filesUrl = "$baseURL/storage";

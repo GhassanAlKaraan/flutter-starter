@@ -17,14 +17,10 @@ final sl = GetIt.instance;
 
 Future<void> init() async {
   // Core
-  sl.registerLazySingleton(() => DioClient(BaseUrls.productionAPi, sl(),
-      loggingInterceptor: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => DioClient(BaseUrls.productionAPi, sl(), loggingInterceptor: sl(), sharedPreferences: sl()));
 
   // Repository
-
-  sl.registerLazySingleton(
-      () => AuthRepo(dioClient: sl(), sharedPreferences: sl()));
-
+  sl.registerLazySingleton(() => AuthRepo(dioClient: sl(), sharedPreferences: sl()));
   sl.registerLazySingleton(() => ExampleRepo(dioClient: sl()));
 
   // Providers
