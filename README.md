@@ -1,3 +1,3 @@
 # flutter_starter
 
-A new Flutter project.
+An opinionated starter project for Flutter mobile apps.

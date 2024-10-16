@@ -1,7 +1,7 @@
-name: flutter_starter
-description: "A new Flutter project."
-publish_to: 'none'
-version: 0.1.0
+name: flutter_starter # TODO change app name
+description: "A new Flutter project." # TODO change app description
+publish_to: 'none' # Keep as is
+version: 0.1.0 # TODO update then when releasing
 
 # Flutter 3.24.3
 environment:
@@ -10,6 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^6.1.2
+  get_it: ^8.0.0
+  shared_preferences: ^2.3.2
+  dio: ^5.7.0
+  dio_cache_interceptor: ^3.5.0
+  easy_localization: ^3.0.7
 
 dev_dependencies:
   flutter_test:
